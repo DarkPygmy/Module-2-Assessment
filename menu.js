@@ -31,7 +31,14 @@
 */
 
 //CODE HERE
-
+const pizza = {
+    name: "Supremo",
+    price: 70,
+    category: "Meat Lovers",
+    popularity: 10,
+    rating: 4,
+    tags: ["cheese", "buffallo", "cat"]
+}
 
 
 //////////////////PROBLEM 2////////////////////
@@ -43,7 +50,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,7 +60,7 @@
 */
 
 //CODE HERE
-
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -63,8 +70,8 @@
 */
 
 //CODE HERE
-
-
+let {price} = pizza
+console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -73,7 +80,8 @@
 */
 
 //CODE HERE
-
+let {category} = pizza
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -88,7 +96,9 @@
 */
 
 //CODE HERE
-
+const foodArr = {
+    
+}
 
 
 //////////////////PROBLEM 4////////////////////

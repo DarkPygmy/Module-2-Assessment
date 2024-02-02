@@ -54,12 +54,11 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 //CODE HERE
 
 const canWeDeliver = zipCode =>{
-    return deliveryAreaZipCodes.filter(num => {
-        return num === deliveryAreaZipCodes
-    })
+    deliveryAreaZipCodes.indexOf(zipCode) ? console.log("You're in our delivery zone!")
+    : console.log("Sorry, we can't deliver to that address.")
 }
 
-canWeDeliver(85204)
+canWeDeliver(85213)
 /* 
     Problem 2 Continued
 
@@ -78,7 +77,12 @@ canWeDeliver(85204)
 */
 
 // CODE HERE
+const canWeDeliverTwo = zipCode2 => {
+    deliveryAreaZipCodes.includes(zipCode2) ? console.log("You're in our delivery zone!")
+    : console.log("Sorry, we can't deliver to that address.")
+}
 
+canWeDeliverTwo(85200)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -114,10 +118,10 @@ const deals = [
 */
 
 //CODE HERE
-
-// const newDeals = deals.replace(deals[0].title, "10% Off!")
-// newDeals
-// console.log(deals.title[0])
+// console.log(deals[0].title)
+const newDeals = deals[0].title.replace('15% Off!', '10% Off!')
+newDeals
+console.log(deals)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -132,3 +136,4 @@ const deals = [
 */
 
 //CODE HERE
+
